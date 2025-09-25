@@ -3,19 +3,15 @@
   "builds": [
     {
       "src": "backend.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["lib/**"]
-      }
+      "use": "@vercel/node"
     }
   ],
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm run build",
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/backend.js"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
