@@ -21,13 +21,9 @@
     "clean": "node run-command.mjs clean format",
     "proxy-validator": "node proxyServiceValidator.js",
     "workflow-test": "node run-command.mjs workflow",
-    "deployment": "npm ci && npm run build && node backend.js"
+    "deployment": "npm install --force && npm run build && node backend.js"
   },
-  "keywords": [
-    "proxy",
-    "node.js",
-    "unblocker"
-  ],
+  "keywords": ["proxy", "node.js", "unblocker"],
   "author": "Titanium Network",
   "license": "GNU AFFERO",
   "dependencies": {
@@ -36,7 +32,7 @@
     "@mercuryworkshop/bare-mux": "^2.1.7",
     "@mercuryworkshop/epoxy-transport": "^2.1.28",
     "@mercuryworkshop/libcurl-transport": "^1.5.0",
-    "@mercuryworkshop/scramjet": "^2.0.0-alpha",
+    "@mercuryworkshop/scramjet": "github:MercuryWorkshop/scramjet#2.0.0-alpha",
     "@titaniumnetwork-dev/ultraviolet": "^3.2.10",
     "axios": "^1.11.0",
     "chii": "^1.15.5",
