@@ -21,7 +21,7 @@
     "clean": "node run-command.mjs clean format",
     "proxy-validator": "node proxyServiceValidator.js",
     "workflow-test": "node run-command.mjs workflow",
-    "deployment": "npm install --force && npm run build && node backend.js"
+    "deployment": "pnpm install --force && npm run build && node backend.js"
   },
   "keywords": [
     "proxy",
@@ -36,7 +36,7 @@
     "@mercuryworkshop/bare-mux": "^2.1.7",
     "@mercuryworkshop/epoxy-transport": "^2.1.28",
     "@mercuryworkshop/libcurl-transport": "^1.5.0",
-    "@mercuryworkshop/scramjet": "github:MercuryWorkshop/scramjet",
+    "@mercuryworkshop/scramjet": "https://github.com/MercuryWorkshop/scramjet.git",
     "@titaniumnetwork-dev/ultraviolet": "^3.2.10",
     "axios": "^1.11.0",
     "chii": "^1.15.5",
