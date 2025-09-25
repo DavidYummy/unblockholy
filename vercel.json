@@ -1,3 +1,28 @@
 {
-  "installCommand": "pnpm install"
+  "version": 3,
+  "builds": [
+    {
+      "src": "backend.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["lib/**"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "backend.js": {
+      "runtime": "nodejs20.x",
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
 }
