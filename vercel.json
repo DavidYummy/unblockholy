@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "builds": [
     {
       "src": "backend.js",
@@ -12,17 +12,10 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "backend.js"
+      "dest": "/backend.js"
     }
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "functions": {
-    "backend.js": {
-      "runtime": "nodejs20.x",
-      "memory": 1024,
-      "maxDuration": 30
-    }
   }
 }
