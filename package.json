@@ -1,30 +1,12 @@
 {
   "name": "holyunblocker",
   "version": "1.0.0",
-  "description": "Unblocker project for streaming or web content",
+  "description": "Unblocker project",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "node index.js",
-    "build": "echo 'No build step defined'",
-    "test": "echo 'No tests defined'"
+    "dev": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DavidYummy/unblockholy.git"
-  },
-  "keywords": [
-    "unblock",
-    "scramjet",
-    "fastify",
-    "nodejs"
-  ],
-  "author": "DavidYummy",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DavidYummy/unblockholy/issues"
-  },
-  "homepage": "https://github.com/DavidYummy/unblockholy#readme",
   "dependencies": {
     "@mercuryworkshop/scramjet": "file:lib/scramjet-2.0.0-alpha.tgz",
     "axios": "^1.6.0",
@@ -36,7 +18,7 @@
   "devDependencies": {
     "@8hobbies/typedoc-plugin-404": "^3.2.1",
     "@giancosta86/typedoc-readonly": "^1.0.1",
-    "typedoc": "^0.28.12"
+    "typedoc": "^0.27.9"
   },
   "engines": {
     "node": ">=20.0.0"
